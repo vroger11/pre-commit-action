@@ -1,4 +1,4 @@
-This action is a fork of pre-commit/action. It is designed to add some new features of pre-commit.ci and maintain the action. 
+This action is a fork of pre-commit/action. It is designed to add some new features of pre-commit.ci (such as `skip` behavior) and maintain the action (as much as possible, PR are welcome!).
 Generally you want to use [pre-commit.ci] which is faster and has more features.
 
 [pre-commit.ci]: https://pre-commit.ci
