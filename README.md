@@ -64,7 +64,7 @@ Here's an example:
 ```yaml
     - uses: vroger11/pre-commit-action@v3.1.1
       with:
-        skip: hook1,hook2,hook3
+        skip: "hook1_id,hook2_id,hook3_id"
 ```
 
 ### using this action in private repositories
