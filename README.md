@@ -1,6 +1,5 @@
-this action is in maintenance-only mode and will not be accepting new features.
-
-generally you want to use [pre-commit.ci] which is faster and has more features.
+This action is a fork of pre-commit/action. It is designed to add some new features of pre-commit.ci and maintain the action. 
+Generally you want to use [pre-commit.ci] which is faster and has more features.
 
 [pre-commit.ci]: https://pre-commit.ci
 
@@ -33,7 +32,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v3
-    - uses: pre-commit/action@v3.0.0
+    - uses: vroger11/pre-commit/action@v3.1.0
 ```
 
 This does a few things:
@@ -51,9 +50,19 @@ Here's a sample step configuration that only runs the `flake8` hook against all
 the files (use the template above except for the `pre-commit` action):
 
 ```yaml
-    - uses: pre-commit/action@v3.0.0
+    - uses: vroger11/pre-commit/action@v3.1.0
       with:
         extra_args: flake8 --all-files
+```
+
+If you want to skip multiple hooks you can use `skip` that works like `SKIP` 
+environment variable for pre-commit.
+
+Here's an example:
+```yaml
+    - uses: vroger11/pre-commit/action@v3.1.0
+      with:
+        skip: hook1,hook2,hook3
 ```
 
 ### using this action in private repositories
