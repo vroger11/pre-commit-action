@@ -34,7 +34,7 @@ jobs:
     - uses: actions/setup-python@v3
       with:
         python-version: '3.11'
-    - uses: vroger11/pre-commit/action@v3.1.0
+    - uses: vroger11/pre-commit-action@v3.1.1
 ```
 
 This does a few things:
@@ -52,7 +52,7 @@ Here's a sample step configuration that only runs the `flake8` hook against all
 the files (use the template above except for the `pre-commit` action):
 
 ```yaml
-    - uses: vroger11/pre-commit/action@v3.1.0
+    - uses: vroger11/pre-commit-action@v3.1.1
       with:
         extra_args: flake8 --all-files
 ```
@@ -62,7 +62,7 @@ environment variable for pre-commit.
 
 Here's an example:
 ```yaml
-    - uses: vroger11/pre-commit/action@v3.1.0
+    - uses: vroger11/pre-commit-action@v3.1.1
       with:
         skip: hook1,hook2,hook3
 ```
