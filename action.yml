@@ -1,5 +1,5 @@
-name: pre-commit
-description: run pre-commit
+name: vroger11/pre-commit-action
+description: run pre-commit as a github action
 inputs:
   extra_args:
     description: options to pass to pre-commit run
