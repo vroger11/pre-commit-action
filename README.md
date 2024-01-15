@@ -32,6 +32,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v3
+      with:
+        python-version: '3.11'
     - uses: vroger11/pre-commit/action@v3.1.0
 ```
 
